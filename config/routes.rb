@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   #get 'articles/:id/edit', to: 'articles#edit', as: :edit_article
   #patch 'articles/:id', to: 'articles#update'
   
-  resources :articles, only: [:index, :show, :new, :create, :edit, :update]
+  resources :articles, only: [:index, :show, :new, :create, :edit, :update] #run "$rake routes" to see key/value (pathname/path) pairs and folder paths
 end
